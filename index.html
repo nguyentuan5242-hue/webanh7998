@@ -1,48 +1,89 @@
-<!DOCTYPE html>
-<html lang="vi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang Chủ - anh tuấn Web Design</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
-    <header class="main-header">
-        <nav class="main-nav">
-            <ul>
-                <li><a href="index.html" class="active-link">Trang Chủ</a></li>
-                <li><a href="thongtin.html">Thông Tin (41T2)</a></li>
-                <li><a href="dichvu.html">Dịch Vụ</a></li>
-            </ul>
-        </nav>
-    </header>
+/* style.css */
 
-    <main class="container">
-        <h1 class="main-title">anh tuấn WEB DESIGN</h1>
-        <hr class="divider">
-        
-        <section class="section intro-section">
-            <h2>Chào mừng đến với Trang Web của anh tuân</h2>
-            <p>
-                Tôi là **anh tuấn**, một nhà phát triển web với sứ mệnh biến ý tưởng của bạn thành hiện thực trực tuyến một cách chuyên nghiệp và tối ưu nhất.
-            </p>
-            <p>
-                Với kinh nghiệm về **Front-end** (HTML5, CSS3, JavaScript), tôi cam kết mang lại những trải nghiệm người dùng mượt mà và trực quan.
-            </p>
-            <div class="cta-box">
-                <a href="dichvu.html" class="cta-button">Xem Dịch Vụ Của Tôi</a>
-                <a href="thongtin.html" class="cta-button secondary-cta">Tìm Hiểu Về Tôi (41T2)</a>
-            </div>
-        </section>
+/* Đặt màu chữ mặc định cho toàn bộ body là màu đen để trang không quá nhiều màu đỏ */
+body {
+    color: #333;
+    font-family: Arial, sans-serif;
+}
 
-    </main>
+/* 1. Đặt Tiêu đề Chính (H1) màu đỏ */
+.main-title {
+    color: #ff0000; /* Màu Đỏ Đậm */
+    text-align: center;
+    margin-top: 30px;
+    font-size: 2.5em;
+}
 
-    <footer class="main-footer">
-        <p>&copy; 2025 anh tuấn Web Design. Liên hệ: <a href="mailto:contact@chianweb.com">contact@chianweb.com</a></p>
-    </footer>
+/* 2. Đặt các Tiêu đề Phụ (H2) màu đỏ */
+.intro-section h2 {
+    color: #cc0000; /* Màu Đỏ Hơi tối */
+    border-bottom: 2px solid #ff9999;
+    padding-bottom: 5px;
+}
 
-</body>
-</html>
+/* 3. Đặt các nút Kêu gọi Hành động (CTA) nền đỏ và chữ trắng */
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    text-decoration: none;
+    color: white; /* Chữ trắng */
+    background-color: #ff3333; /* Nền Đỏ sáng */
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
 
+.cta-button:hover {
+    background-color: #cc0000; /* Đỏ đậm hơn khi di chuột */
+}
 
+/* 4. Đặt đường phân cách (HR) màu đỏ */
+.divider {
+    border: 0;
+    height: 1px;
+    background-color: #ff0000;
+    width: 50%;
+    margin: 20px auto;
+}
+
+/* 5. Đặt liên kết trong Footer màu đỏ */
+.main-footer a {
+    color: #ff0000;
+    text-decoration: none;
+}
+
+/* 6. Thêm định dạng cơ bản để trang đẹp hơn */
+.main-header {
+    background-color: #333;
+    padding: 10px 0;
+}
+.main-nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+.main-nav li {
+    display: inline;
+    margin: 0 15px;
+}
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+.active-link {
+    border-bottom: 2px solid #ff0000; /* Đánh dấu Trang Chủ bằng màu đỏ */
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+.main-footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    color: white;
+    margin-top: 50px;
+}
